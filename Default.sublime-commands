@@ -1,0 +1,10 @@
+[
+	{
+		"caption": "Sublime Formater: *.sublime-commands",
+		"command": "ssff", "args": {"extension": [".sublime-commands"], "sort_by": ["caption"]}
+	},
+	{
+		"caption": "Sublime Formater: *.sublime-keymap",
+		"command": "ssff", "args": {"extension": [".sublime-keymap"], "sort_by": ["command", "keys"]}
+	}
+]
