@@ -3,10 +3,13 @@ import sublime_plugin
 
 import os
 
-from .sublime_source_file_formater import tools
+try:
+    from .pretty_sublime_json import tools
+except:
+    from pretty_sublime_json import tools
 
 
-class SsffCommand(sublime_plugin.TextCommand):
+class PsjReformatCommand(sublime_plugin.TextCommand):
 
     def is_enabled(self, extension, sort_by):
         try:
